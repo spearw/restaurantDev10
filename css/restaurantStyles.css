@@ -5,34 +5,15 @@
   font-size: 1.5rem;
 }
 
-img {
-  width: 100%;
-  margin-bottom: 2rem;
+h1 {
+  font-family: "Cookie", cursive;
+  font-size: 4rem;
 }
 
-h3 {
-  margin: 2rem 0;
+a:visited {
+  color: purple !important;
 }
 
-.center_big {
-  text-align: center;
-}
-
-.fifty_big {
-  width: 50%;
-  margin: auto;
-}
-
-.label {
-  text-align: right;
-}
-
-@media only screen and (max-width: 768px) {
-  .center_big {
-    text-align: left;
-  }
-  .fifty_big {
-    width: 80%;
-    margin: auto;
-  }
+a:hover {
+  font-weight: bold;
 }

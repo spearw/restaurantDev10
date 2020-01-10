@@ -19,8 +19,27 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/restaurantStyles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Fennel and Anise</title>
+
+    <style type="text/css">
+      .form_text {
+        width: 50%;
+        margin: auto;
+        text-align: right;
+      }
+      @media only screen and (max-width: 768px) {
+        .form_text {
+          width: 80%;
+          margin: auto;
+          text-align: left;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="d-flex justify-content-between">
@@ -68,11 +87,9 @@
     </nav>
 
     <!-- Main Content-->
-    <form class="fifty_big">
-      <div class="form-group row">
-        <label for="inputName" class="col-sm-6 col-form-label text-right"
-          >Name:</label
-        >
+    <form class="form_text">
+      <div class="form-group row font-weight-bold">
+        <label for="inputName" class="col-sm-6 col-form-label">Name:</label>
         <div class="col-sm-6">
           <input
             type="text"
@@ -82,10 +99,8 @@
           />
         </div>
       </div>
-      <div class="form-group row">
-        <label for="inputEmail" class="col-sm-6 col-form-label text-right"
-          >Email:</label
-        >
+      <div class="form-group row font-weight-bold">
+        <label for="inputEmail" class="col-sm-6 col-form-label">Email:</label>
         <div class="col-sm-6">
           <input
             type="email"
@@ -96,9 +111,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputPhone" class="col-sm-6 col-form-label text-right"
-          >Phone:</label
-        >
+        <label for="inputPhone" class="col-sm-6 col-form-label">Phone:</label>
         <div class="col-sm-6">
           <input
             type="number"
@@ -108,8 +121,8 @@
           />
         </div>
       </div>
-      <div class="form-group row">
-        <label for="inquirySelect" class="col-sm-6 col-form-label text-right"
+      <div class="form-group row font-weight-bold">
+        <label for="inquirySelect" class="col-sm-6 col-form-label"
           >Reason for Inquiry:</label
         >
         <element class="col-sm-6">
@@ -122,9 +135,7 @@
         >
       </div>
       <div class="form-group row">
-        <label
-          for="additionalInformation"
-          class="col-sm-6 col-form-label text-right"
+        <label for="additionalInformation" class="col-sm-6 col-form-labelt"
           >Additional Information:</label
         >
         <element class="col-sm-6">
@@ -137,10 +148,10 @@
       </div>
       <fieldset class="form-group">
         <div class="row">
-          <legend class="col-form-label col-sm-6 pt-0 text-right">
+          <legend class="col-form-label col-sm-6 pt-0">
             Have you been to the restaurant?
           </legend>
-          <div class="col-sm-6">
+          <div class="col-sm-6 text-left">
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
@@ -170,7 +181,7 @@
         </div>
       </fieldset>
       <div class="form-group row">
-        <div class="col-sm-6 text-right">Best days to contact you:</div>
+        <div class="col-sm-6">Best days to contact you:</div>
         <div class="col-sm-6">
           <div class="form-check form-check-inline">
             <input
