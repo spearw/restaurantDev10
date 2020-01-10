@@ -1,0 +1,38 @@
+/* Favicon Styles */
+.fa {
+  text-align: center;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin: 2rem 0;
+}
+
+.center_big {
+  text-align: center;
+}
+
+.fifty_big {
+  width: 50%;
+  margin: auto;
+}
+
+.label {
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .center_big {
+    text-align: left;
+  }
+  .fifty_big {
+    width: 80%;
+    margin: auto;
+  }
+}
