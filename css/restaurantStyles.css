@@ -5,9 +5,14 @@
   font-size: 1.5rem;
 }
 
+body {
+  font-family: "Major Mono Display", monospace;
+}
+
 h1 {
-  font-family: "Cookie", cursive;
+  font-family: "Lobster", cursive;
   font-size: 4rem;
+  color: #12440a;
 }
 
 a:visited {
@@ -16,4 +21,18 @@ a:visited {
 
 a:hover {
   font-weight: bold;
+}
+
+.opaque {
+  opacity: 70%;
+}
+
+.fa-home {
+  font-size: 1rem !important;
+  color: inherit;
+}
+
+.alert {
+  font-family: monospace;
+  text-align: center;
 }

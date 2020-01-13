@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="../css/restaurantStyles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lobster|Major+Mono+Display&display=swap"
       rel="stylesheet"
     />
 
@@ -47,7 +47,7 @@
     <!-- Navbar -->
 
     <nav
-      class="mb-3 mt-3 navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      class="mb-3 mt-3 navbar navbar-expand-sm navbar-light bg-light sticky-top"
     >
       <button
         class="navbar-toggler"
@@ -63,22 +63,66 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <!-- Should be the 'home' symbol -->
-            <a class="nav-link" href="#">Home</a>
+            <a
+              class="btn badge-pill btn-secondary fa fa-home"
+              href="index.html"
+            ></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="btn badge-pill btn-secondary opaque" href="menu.html"
+              >Menu</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="btn badge-pill btn-secondary opaque" href="contact.html"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- JS disabled message -->
+    <noscript>
+      <h2 class="alert alert-danger">Warning: JavaScript disabled. This website is best used with JavaScript enabled.</h2>
+    </noscript>
+
     <!-- Main Content -->
 
-    <div class="d-flex flex-column bd-highlight mb-3 text-center main">
+    <div
+      id="carousel"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+    <header class="jumbotron text-center">
+      <h1>We are opening a new location!</h1>
+      <h2 class="font-italic">
+        2128 School Street, Brooklyn, NY, New York, 11201
+      </h2>
+    </header>
+        </div>
+        <div class="carousel-item">
+    <header class="jumbotron text-center">
+      <h1>We're rolling out our seasonal menu!</h1>
+      <h2 class="font-italic">
+        Special options for this season
+      </h2>
+        </div>
+        <div class="carousel-item">
+    <header class="jumbotron text-center">
+      <h1>Drink of the Month:</h1>
+      <h2 class="font-italic">
+        SG Special Brew
+      </h2>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="d-flex flex-column bd-highlight mb-3 text-center main pt-3 ml-3 mr-3"
+    >
       <div class="col-md-6 mx-auto">
         <img
           src="../images/fennel.jpg"
@@ -86,7 +130,10 @@
           style="width: 100%; margin-bottom: 2rem"
         />
       </div>
-      <div class="col-md-6 mx-auto">
+      <div
+        class="col-md-6 mx-auto pb-4"
+        style="font-family: monospace; font-size: 1.2rem;"
+      >
         <em>Fennel and Anise</em> was founded in 2007 by brothers Leo and Jacob
         Flam. We aspired to bring you the subtle flavors of both fennel and
         anise - it's our speciality! Both flowering plants share the organic

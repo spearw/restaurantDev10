@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="../css/restaurantStyles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lobster|Major+Mono+Display&display=swap"
       rel="stylesheet"
     />
 
@@ -31,6 +31,7 @@
         width: 50%;
         margin: auto;
         text-align: right;
+        font-family: monospace;
       }
       @media only screen and (max-width: 768px) {
         .form_text {
@@ -57,7 +58,7 @@
     <!-- Navbar -->
 
     <nav
-      class="mb-3 mt-3 navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      class="mb-3 mt-3 navbar navbar-expand-sm navbar-light bg-light sticky-top"
     >
       <button
         class="navbar-toggler"
@@ -73,21 +74,33 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <!-- Should be the 'home' symbol -->
-            <a class="nav-link" href="index.html">Home</a>
+            <a
+              class="btn badge-pill btn-secondary opaque fa fa-home"
+              href="index.html"
+            ></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="btn badge-pill btn-secondary opaque" href="menu.html"
+              >Menu</a
+            >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="btn badge-pill btn-secondary" href="#">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- JS disabled message -->
+    <noscript>
+      <h2 class="alert alert-danger">
+        Warning: JavaScript disabled. This website is best used with JavaScript
+        enabled.
+      </h2>
+    </noscript>
+
     <!-- Main Content-->
-    <form class="form_text">
+    <form name="contact" onsubmit="return validateInput()" class="form_text">
       <div class="form-group row font-weight-bold">
         <label for="inputName" class="col-sm-6 col-form-label">Name:</label>
         <div class="col-sm-6">
@@ -110,18 +123,18 @@
           />
         </div>
       </div>
-      <div class="form-group row">
+      <div class="form-group row font-weight-bold">
         <label for="inputPhone" class="col-sm-6 col-form-label">Phone:</label>
         <div class="col-sm-6">
           <input
             type="number"
             class="form-control"
             id="inputPhone"
-            placeholder="xxx-xxx-xxxx"
+            placeholder="xxx xxx xxxx"
           />
         </div>
       </div>
-      <div class="form-group row font-weight-bold">
+      <div class="form-group row">
         <label for="inquirySelect" class="col-sm-6 col-form-label"
           >Reason for Inquiry:</label
         >
@@ -158,7 +171,7 @@
                 type="radio"
                 name="gridRadios"
                 id="noRadio"
-                value="option1"
+                value="no"
                 checked
               />
               <label class="form-check-label" for="noRadio">
@@ -171,7 +184,7 @@
                 type="radio"
                 name="gridRadios"
                 id="yesRadio"
-                value="option2"
+                value="yes"
               />
               <label class="form-check-label" for="yesRadio">
                 Yes
@@ -256,6 +269,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Validation Script -->
+    <script type="text/JavaScript" src="../js/form_validation.js"></script>
 
     <!-- Bootstrap Scripts -->
     <script
